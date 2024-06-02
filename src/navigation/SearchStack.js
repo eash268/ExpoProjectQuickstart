@@ -1,10 +1,14 @@
 import React from "react";
 import { View, Text } from "react-native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { SearchScreen } from "../screens/SearchScreen";
+
+const Stack = createStackNavigator();
 
 export const SearchStack = () => {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>SearchStack</Text>
-    </View>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Search Screen" component={SearchScreen} />
+    </Stack.Navigator>
   );
 };

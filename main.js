@@ -2,6 +2,8 @@ import React from "react";
 import { Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import { AntDesign } from "@expo/vector-icons";
 
 import { HomeStack } from "./src/navigation/HomeStack";
 import { SearchStack } from "./src/navigation/SearchStack";
@@ -20,15 +22,17 @@ export const Main = () => {
             if (route.name === "Home") {
               icon = focused ? "home" : "home";
             } else if (route.name === "Search") {
-              icon = focused ? "search" : "search";
+              icon = focused ? "search1" : "search1";
             } else if (route.name === "Profile") {
               icon = focused ? "user" : "user";
             }
 
-            return <Text>{icon}</Text>;
+            // return <Ionicons name={icon} size={size} color={color} />;
+            return <AntDesign name={icon} size={size} color={color} />;
           },
           tabBarActiveTintColor: "blue",
           tabBarInactiveTintColor: "gray",
+          headerShown: false,
         })}
       >
         <Tab.Screen name="Home" component={HomeStack} />

@@ -1,11 +1,14 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { SignOut } from "../components/SignOut";
+import { createStackNavigator } from "@react-navigation/stack";
+import { ProfileScreen } from "../screens/ProfileScreen";
+
+const Stack = createStackNavigator();
 
 export const ProfileStack = () => {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <SignOut />
-    </View>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Profile Screen" component={ProfileScreen} />
+    </Stack.Navigator>
   );
 };
