@@ -5,7 +5,6 @@ import { SignOut } from "../components/SignOut";
 export const ProfileStack = () => {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>ProfileStack</Text>
       <SignOut />
     </View>
   );
