@@ -4,7 +4,8 @@ import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-expo";
 import { SignInWithOauth } from "./src/components/SignInWithOauth";
 import { SignOut } from "./src/components/SignOut";
 
-const EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY = ""
+// get EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY from .env file
+const EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
 export default function App() {
   return (
