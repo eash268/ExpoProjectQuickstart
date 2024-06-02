@@ -1,6 +1,6 @@
 import React from "react";
 import { SafeAreaView, Text, StyleSheet, Button } from "react-native";
-import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-react";
+import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-expo";
 import { SignInWithOauth } from "./src/components/SignInWithOauth";
 import { SignOut } from "./src/components/SignOut";
 
