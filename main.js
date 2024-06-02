@@ -1,8 +1,6 @@
 import React from "react";
-import { Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import Ionicons from "@expo/vector-icons/Ionicons";
 import { AntDesign } from "@expo/vector-icons";
 
 import { HomeStack } from "./src/navigation/HomeStack";
@@ -27,7 +25,6 @@ export const Main = () => {
               icon = focused ? "user" : "user";
             }
 
-            // return <Ionicons name={icon} size={size} color={color} />;
             return <AntDesign name={icon} size={size} color={color} />;
           },
           tabBarActiveTintColor: "blue",
