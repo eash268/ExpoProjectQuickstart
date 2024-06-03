@@ -7,8 +7,29 @@ export const HomeScreen = () => {
 
   // when user is loaded, print get token
   if (isLoaded) {
-    getToken().then((token) => console.log(token));
+    getToken().then((token) => {
+      console.log("userId", userId);
+      console.log("sessionId", sessionId);
+      console.log("token", token);
+    });
   }
+
+  const exampleFetch = async () => {
+    const token = await getToken();
+    const response = await fetch("https://<your-backend-url>/example_post", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
+      .then((res) => res.text())
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err));
+  };
+
+  useEffect(() => {
+    exampleFetch();
+  }, []);
 
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
