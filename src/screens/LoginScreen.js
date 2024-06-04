@@ -15,7 +15,7 @@ export const LoginScreen = () => {
         </Text>
       </View>
       <View>
-        <SignInWithOauth />
+        <SignInWithOauth text="Sign in with Google" strategy="oauth_google" />
       </View>
     </SafeAreaView>
   );
