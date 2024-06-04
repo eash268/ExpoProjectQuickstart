@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { View, Text } from "react-native";
 import { useAuth } from "@clerk/clerk-expo";
 
-export const HomeScreen = () => {
+export const HomeScreen = ({ route, navigation }) => {
   const { isLoaded, userId, sessionId, getToken } = useAuth();
 
   // when user is loaded, print get token
