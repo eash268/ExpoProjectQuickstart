@@ -15,11 +15,11 @@ export const HomeTabs = () => {
         tabBarIcon: ({ focused, color, size }) => {
           let icon;
 
-          if (route.name === "Home") {
+          if (route.name === "Home Tab") {
             icon = focused ? "home" : "home";
-          } else if (route.name === "Search") {
+          } else if (route.name === "Search Tab") {
             icon = focused ? "search1" : "search1";
-          } else if (route.name === "Profile") {
+          } else if (route.name === "Profile Tab") {
             icon = focused ? "user" : "user";
           }
 
@@ -30,9 +30,9 @@ export const HomeTabs = () => {
         headerShown: false,
       })}
     >
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Search" component={SearchScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
+      <Tab.Screen name="Home Tab" component={HomeScreen} />
+      <Tab.Screen name="Search Tab" component={SearchScreen} />
+      <Tab.Screen name="Profile Tab" component={ProfileScreen} />
     </Tab.Navigator>
   );
 };
