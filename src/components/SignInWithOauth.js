@@ -2,7 +2,7 @@ import React, { useCallback, useState } from "react";
 import * as WebBrowser from "expo-web-browser";
 import { useOAuth } from "@clerk/clerk-expo";
 import { StyleSheet, Pressable, Text } from "react-native";
-import GlobalColors from "../styles/Colors";
+import GlobalColors from "../styles/colors";
 
 WebBrowser.maybeCompleteAuthSession();
 

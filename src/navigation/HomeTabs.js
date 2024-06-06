@@ -1,7 +1,7 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { AntDesign } from "@expo/vector-icons";
-import GlobalColors from "../styles/Colors";
+import GlobalColors from "../styles/colors";
 
 import { HomeScreen } from "../screens/HomeScreen";
 import { SearchScreen } from "../screens/SearchScreen";
