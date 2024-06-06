@@ -1,6 +1,7 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { AntDesign } from "@expo/vector-icons";
+import GlobalColors from "../styles/Colors";
 
 import { HomeScreen } from "../screens/HomeScreen";
 import { SearchScreen } from "../screens/SearchScreen";
@@ -28,6 +29,11 @@ export const HomeTabs = () => {
         tabBarActiveTintColor: "blue",
         tabBarInactiveTintColor: "gray",
         headerShown: false,
+        tabBarShowLabel: false,
+        tabBarStyle: {
+          backgroundColor: GlobalColors.white,
+          paddingTop: 8,
+        },
       })}
     >
       <Tab.Screen name="Home Tab" component={HomeScreen} />

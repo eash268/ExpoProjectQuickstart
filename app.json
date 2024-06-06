@@ -2,6 +2,7 @@
   "expo": {
     "name": "ExpoProjectQuickstart",
     "slug": "ExpoProjectQuickstart",
+    "scheme": "com.eashereum.ExpoProjectQuickstart",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -12,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.eashereum.ExpoProjectQuickstart"
     },
     "android": {
       "adaptiveIcon": {
@@ -22,6 +24,11 @@
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1d608707-b91a-4d2a-83c9-28dfdc990bbd"
+      }
     }
   }
 }

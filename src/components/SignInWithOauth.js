@@ -1,7 +1,8 @@
 import React, { useCallback, useState } from "react";
 import * as WebBrowser from "expo-web-browser";
 import { useOAuth } from "@clerk/clerk-expo";
-import { StyleSheet, Button, Pressable, Text } from "react-native";
+import { StyleSheet, Pressable, Text } from "react-native";
+import GlobalColors from "../styles/Colors";
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -32,11 +33,12 @@ export const SignInWithOauth = ({ text, strategy }) => {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: "#f0f0f0",
+    backgroundColor: GlobalColors.lightgrey,
     borderRadius: 10,
     padding: 10,
     alignItems: "center",
     justifyContent: "center",
-    width: "100%",
+    width: 300,
+    marginBottom: 12,
   },
 });
