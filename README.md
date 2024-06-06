@@ -12,6 +12,7 @@
 2. Add EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY in .env
 3. Add desired login methods to /src/screens/LoginScreen.js
 4. Make sure to add token to all request headers, as shown in /src/screens/HomeScreen.js
+5. Add "scheme": "com.name_of_your_app.app" to the expo part of /app.json
 
 ### Running The App
 
@@ -25,9 +26,9 @@
 4. $ eas secret:push --scope project --env-file .env
 5. $ eas build --platform ios
 6. $ eas submit -p ios
+7. Repeat steps 5 and 6 for new builds
 
 ### Tips
 
 - Make sure the name of your app in /app.json is unique enough and short enough or Apple won't let you submit to their store
-- Make sure to increment "ios.buildNumber" when rebuilding
-- Make sure to add "scheme": "com.name_of_your_app.app" to the expo part of app.json
+- Make sure to increment "ios.buildNumber" in /app.json when rebuilding

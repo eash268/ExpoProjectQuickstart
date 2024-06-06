@@ -14,7 +14,8 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.eashereum.ExpoProjectQuickstart"
+      "bundleIdentifier": "com.eashereum.ExpoProjectQuickstart",
+      "buildNumber": "1"
     },
     "android": {
       "adaptiveIcon": {
